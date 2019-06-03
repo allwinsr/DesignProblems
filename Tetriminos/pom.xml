@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.boomerang.aws</groupId>
+	<artifactId>Allwin</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0</version>
+	<name>Allwin</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- <dependency> <groupId>com.amazonaws</groupId> <artifactId>aws-java-sdk</artifactId> 
+			<version>1.10.41</version> </dependency> <dependency> <groupId>com.amazonaws</groupId> 
+			<artifactId>aws-java-sdk</artifactId> <version>1.10.75</version> </dependency> 
+			<dependency> <groupId>com.boomerang.snowflake</groupId> <artifactId>Snowshift</artifactId> 
+			<version>1.0-SNAPSHOT</version> </dependency> <dependency> <groupId>com.rboomerang</groupId> 
+			<artifactId>bss-client</artifactId> <version>1.0-SNAPSHOT</version> </dependency> -->
+		<dependency>
+			<groupId>com.github.dikhan</groupId>
+			<artifactId>pagerduty-client</artifactId>
+			<version>2.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.2</version>
+		</dependency>
+
+	</dependencies>
+	<!-- <build> <plugins> <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>exec-maven-plugin</artifactId> 
+		<version>1.2.1</version> <executions> <execution> <phase>package</phase> 
+		<goals> <goal>java</goal> </goals> </execution> </executions> <configuration> 
+		<mainClass>com.boomerang.PreSignedUrl.GeneratePreSignedUrl</mainClass> <mainClass>com.boomerang.aws.S3FolderSize</mainClass> 
+		<mainClass>com.boomerang.test.ReshiftPasswordValidator</mainClass> <cleanupDaemonThreads>false</cleanupDaemonThreads> 
+		</configuration> </plugin> </plugins> </build> -->
+</project>
